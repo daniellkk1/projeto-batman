@@ -16,3 +16,38 @@ export const Elements = [
         image: "https://variety.com/wp-content/uploads/2024/01/GettyImages-1831678080.jpg"
     },
 ]
+
+export const Photografys = [
+
+    {
+        image: "https://portalpopline.com.br/wp-content/uploads/2022/02/batman-pre-estreia.jpg"
+    },
+
+    {
+        image: "https://f.i.uol.com.br/fotografia/2022/03/03/1646335058622114526c952_1646335058_3x2_xl.jpg"
+    },
+
+    {
+        image: "https://br.web.img3.acsta.net/newsv7/22/03/02/15/45/5269349.jpg"
+    },
+
+    {
+        image: "https://cdn.ome.lt/nQvL7VGZze-eWKVIIh4QSBhSKuM=/1200x630/smart/extras/conteudos/the-batman-tem-cena-pos-creditos.jpg"
+    },
+
+    {
+        image: "https://i0.wp.com/eulorenaribeiro.com/wp-content/uploads/2022/03/the-batman-2.jpg?resize=1200%2C1000&ssl=1"
+    },
+
+    {
+        image: "https://recreio.com.br/media/uploads/2024/06/andy-serkis-the-batman-capa.jpg"
+    },
+
+    {
+        image: "https://upload.wikimedia.org/wikipedia/pt/3/38/The_Batman_poster.jpg"
+    },
+
+    {
+        image: "https://bloggallerya.com/wp-content/uploads/2022/02/batman-gordon.jpg"
+    },
+]
