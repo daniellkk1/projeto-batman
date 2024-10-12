@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
+import { IoMenu } from "react-icons/io5";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -24,6 +25,8 @@ export const ContainerPage = styled.div`
     height: 100vh;
     width: 100vw;
     background-color: black;
+    display: flex;
+    flex-direction: column;
 `
 export const ContainerHeader = styled.div`
     height: 80px;
@@ -32,6 +35,7 @@ export const ContainerHeader = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    
         ul{
             height: inherit;
             width: inherit;
@@ -51,17 +55,67 @@ export const ContainerHeader = styled.div`
                             color: red;
                         }
                 }
+
+                div{
+                  display:none;
+                  width: 90%;
+                  height:inherit;
+                  justify-content: space-between;
+                  align-items: center;
+                    img{
+                      height: 120px;
+                      width: 100px;
+                      display: none;
+                  }
+
+                      @media(max-width: 768px){
+                      display: flex;
+                    }
+                }
+
+                @media(max-width: 768px){
+                  display: none;
+                }
         }
+
+        div{
+                  display:none;
+                  width: 90%;
+                  height:inherit;
+                  justify-content: space-between;
+                  align-items: center;
+                    img{
+                      height: 120px;
+                      width: 100px;
+                  }
+
+                      @media(max-width: 768px){
+                      display: flex;
+                    }
+                }
 `
+
+export const StyledIcon = styled(IoMenu)`
+  color: orange;
+  font-size: 50px;
+  &:hover {
+    color: red;
+    cursor: pointer;
+  }
+`;
 export const FooterContainer = styled.footer`
   background-color: black;
   color: #fff;
   padding: 20px 0;
   text-align: center;
+  width: 100%;      // Garante que o footer ocupe toda a largura da página
+  display: block;   // Garante que o footer tenha comportamento de bloco
+  position: relative;  // Remover qualquer possibilidade de posição absoluta/fixa
+  z-index: 1;  
 `;
 
 export const FooterContent = styled.div`
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 20px;
 `;
@@ -75,8 +129,11 @@ export const FooterLinks = styled.ul`
   list-style: none;
   padding: 0;
   margin: 10px 0;
-  display: flex;
+  display: none;
   justify-content: center;
+    @media(max-width: 768px){
+            display: flex;
+          }
 `;
 
 export const FooterLinkItem = styled.li`

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import {  ContainerHeader, ContainerPage, FooterContainer, FooterContent, FooterLink, FooterLinkItem, FooterLinks, FooterText, GlobalStyle } from "./styles/stylesGlobal";
+import {  ContainerHeader, ContainerPage, FooterContainer, FooterContent, FooterLink, FooterLinkItem, FooterLinks, FooterText, GlobalStyle, StyledIcon } from "./styles/stylesGlobal";
 import { Rotas } from "./routers/router";
 
 
@@ -11,6 +11,10 @@ function App() {
 
     <ContainerPage>
       <ContainerHeader>
+        <div>
+          <img src={require('./utils/Image/logo.png')} alt="logo" />
+          <StyledIcon/>
+        </div>
         <ul>
           <img src={require('./utils/Image/logo.png')} alt="logo" />
           <li><Link style={{textDecoration: 'none',color: 'white'}} to="/">Home</Link></li>

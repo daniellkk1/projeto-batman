@@ -50,4 +50,12 @@ export const Photografys = [
     {
         image: "https://bloggallerya.com/wp-content/uploads/2022/02/batman-gordon.jpg"
     },
+
+    {
+        image: "https://www.planocritico.com/wp-content/uploads/2022/03/The-Batman-Com-Spoilers-5.jpg"
+    },
+
+    {
+        image: "https://s2.glbimg.com/9u12OWz7wLHfObFTtZlXOGsNuM4=/smart/e.glbimg.com/og/ed/f/original/2022/01/25/screenshot_2022-01-25_at_09-00-35_the_batman_2022.png"
+    },
 ]
