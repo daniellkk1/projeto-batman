@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom";
-import {  ContainerHeader, ContainerPage, FooterContainer, FooterContent, FooterLink, FooterLinkItem, FooterLinks, FooterText, GlobalStyle, StyledIcon } from "./styles/stylesGlobal";
+import {  ContainerHeader, ContainerPage, FooterContainer, FooterContent, FooterLink, FooterLinkItem, FooterLinks, FooterText, GlobalStyle, StyledIcon, StyledIconClose } from "./styles/stylesGlobal";
 import { Rotas } from "./routers/router";
+import { useContext } from "react";
+import { MenuContext } from "./context/usecontext";
+import { Navbar } from "./components/navbar/navbar";
 
 
 function App() {
+
+  const { isOpen, toggleMenu } = useContext(MenuContext);
+
   return (
     <>
 
@@ -13,7 +19,7 @@ function App() {
       <ContainerHeader>
         <div>
           <img src={require('./utils/Image/logo.png')} alt="logo" />
-          <StyledIcon/>
+          {isOpen ? <StyledIconClose onClick={toggleMenu}/> : <StyledIcon onClick={toggleMenu}/>}
         </div>
         <ul>
           <img src={require('./utils/Image/logo.png')} alt="logo" />
@@ -23,6 +29,8 @@ function App() {
           <li>Contato</li>
         </ul>
       </ContainerHeader>
+
+      <Navbar/>
 
       <Rotas/>
 

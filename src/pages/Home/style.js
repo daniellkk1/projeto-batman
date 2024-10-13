@@ -23,7 +23,12 @@ export const PartyMain = styled.main`
   padding: 15px;
 
   iframe{
-    width: 90%;
+    width: 50%;
+
+    @media(max-width: 1068px) {
+        width: 90%;
+
+      }
   }
 
   article {

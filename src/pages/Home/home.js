@@ -3,6 +3,8 @@ import { Banner, PartyMain, PartySection } from './style'
 
 
 export const Home = () => {
+
+
     return(
         <>
             <Banner src={require('../../utils/Image/Batman-02.jpg')} alt="banner" />

@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
-import { IoMenu } from "react-icons/io5";
+import { IoMenu, IoClose } from "react-icons/io5";
+
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -35,6 +36,7 @@ export const ContainerHeader = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
     
         ul{
             height: inherit;
@@ -103,6 +105,17 @@ export const StyledIcon = styled(IoMenu)`
     cursor: pointer;
   }
 `;
+
+export const StyledIconClose = styled(IoClose)`
+  color: orange;
+  font-size: 50px;
+  &:hover {
+    color: red;
+    cursor: pointer;
+  }
+`;
+
+
 export const FooterContainer = styled.footer`
   margin-top: 100px;
   background-color: black;
