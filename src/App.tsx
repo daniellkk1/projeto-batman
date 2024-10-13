@@ -31,10 +31,14 @@ function App() {
                 <FooterText>&copy; 2024 Desenvolvido por Daniel Lima. Todos os direitos reservados.</FooterText>
                 <FooterLinks>
                 <FooterLinkItem>
+                  <Link to="/" >
                     <FooterLink href="#about">Home</FooterLink>
+                  </Link>
                 </FooterLinkItem>
                 <FooterLinkItem>
+                  <Link to="/Photos" >
                     <FooterLink href="#services">Fotos</FooterLink>
+                  </Link>
                 </FooterLinkItem>
                 <FooterLinkItem>
                     <FooterLink href="#contact">Comentarios</FooterLink>
