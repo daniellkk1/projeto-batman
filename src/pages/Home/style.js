@@ -48,6 +48,7 @@ export const PartyMain = styled.main`
 `
 
 export const PartySection = styled.section`
+    margin-top: 50px;
     height: 100vh;
     width: 100%;
     display: flex;

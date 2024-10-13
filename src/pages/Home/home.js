@@ -10,7 +10,7 @@ export const Home = () => {
             <PartyMain>
             <iframe
                 width="50%" 
-                height="600px" 
+                height="450px" 
                 src="https://www.youtube.com/embed/rsQEor4y2hg?si=5Ekx_f6Cg_0plg--" 
                 title="YouTube video player" 
                 frameBorder="0" 

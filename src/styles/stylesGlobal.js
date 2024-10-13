@@ -27,6 +27,7 @@ export const ContainerPage = styled.div`
     background-color: black;
     display: flex;
     flex-direction: column;
+    grid-column-gap: 50px;
 `
 export const ContainerHeader = styled.div`
     height: 80px;
@@ -107,11 +108,7 @@ export const FooterContainer = styled.footer`
   background-color: black;
   color: #fff;
   padding: 20px 0;
-  text-align: center;
-  width: 100%;      // Garante que o footer ocupe toda a largura da página
-  display: block;   // Garante que o footer tenha comportamento de bloco
-  position: relative;  // Remover qualquer possibilidade de posição absoluta/fixa
-  z-index: 1;  
+  text-align: center; 
 `;
 
 export const FooterContent = styled.div`
