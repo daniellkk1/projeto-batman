@@ -25,7 +25,7 @@ function App() {
           <img src={require('./utils/Image/logo.png')} alt="logo" />
           <li><Link style={{textDecoration: 'none',color: 'white'}} to="/">Home</Link></li>
           <li><Link style={{textDecoration: 'none',color: 'white'}} to="/Photos">Fotos</Link></li>
-          <li>Comentarios</li>
+          <li><Link style={{textDecoration: 'none',color: 'white'}} to="/Coments">Comentarios</Link></li>
           <li>Contato</li>
         </ul>
       </ContainerHeader>

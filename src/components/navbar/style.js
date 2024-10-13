@@ -12,7 +12,7 @@ export const Menu = styled.div`
   flex-direction: column;
   padding-top: 60px;
   transform: ${(props) => props.isOpen ? 'translateX(0)' : 'translateX(100%)'};
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   z-index: 1;   
 `;
 
@@ -22,5 +22,6 @@ export const MenuItem = styled.a`
   padding: 1rem;
   &:hover {
     background-color: #555;
+    color: orange;
   }
 `;
