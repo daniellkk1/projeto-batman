@@ -27,7 +27,6 @@ export const ContainerPage = styled.div`
     background-color: black;
     display: flex;
     flex-direction: column;
-    grid-column-gap: 50px;
 `
 export const ContainerHeader = styled.div`
     height: 80px;
@@ -105,6 +104,7 @@ export const StyledIcon = styled(IoMenu)`
   }
 `;
 export const FooterContainer = styled.footer`
+  margin-top: 100px;
   background-color: black;
   color: #fff;
   padding: 20px 0;
