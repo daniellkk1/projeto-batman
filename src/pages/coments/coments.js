@@ -1,49 +1,29 @@
-import { useState } from "react";
-import { Button, CommentForm, CommentItem, CommentsList, Container, TextArea } from "./style";
+import { ReviewCard } from "../../components/reviewcard/reviewcard";
+import { reviews } from "../../utils/backcards/array";
+import { Container, ReviewContainer, Sidebar, SidebarButton } from "./style";
 
 
-
-export const CommentsPage = () => {
-    const [comments, setComments] = useState([]); // Estado para armazenar os comentários
-    const [newComment, setNewComment] = useState(""); // Estado para o texto do novo comentário
-  
-    // Função para adicionar um novo comentário
-    const handleAddComment = (e) => {
-      e.preventDefault();
-      if (newComment.trim()) {
-        const comment = {
-          text: newComment,
-          date: new Date().toLocaleString(), // Adiciona a data e hora do comentário
-        };
-        setComments([comment, ...comments]); // Adiciona o novo comentário à lista
-        setNewComment(""); // Limpa o campo de texto
-      }
-    };
-  
-    return (
-      <Container>
-        <h2>Comentários</h2>
-        <CommentForm onSubmit={handleAddComment}>
-          <TextArea
-            placeholder="Escreva seu comentário..."
-            value={newComment}
-            onChange={(e) => setNewComment(e.target.value)}
+export const ReviewList = () => {
+  return (
+    <Container>
+      <ReviewContainer>
+        {reviews.map((review, index) => (
+          <ReviewCard
+            key={index}
+            user={review.user}
+            avatar={review.avatar}
+            date={review.date}
+            comment={review.comment}
+            rating={review.rating}
           />
-          <Button type="submit">Enviar Comentário</Button>
-        </CommentForm>
-        <CommentsList>
-          {comments.length === 0 ? (
-            <p>Seja o primeiro a comentar!</p>
-          ) : (
-            comments.map((comment, index) => (
-              <CommentItem key={index}>
-                <p>{comment.text}</p>
-                <small>Comentado em: {comment.date}</small>
-              </CommentItem>
-            ))
-          )}
-        </CommentsList>
-      </Container>
-    );
-  };
-  
+        ))}
+      </ReviewContainer>
+      <Sidebar>
+        <SidebarButton>Share Review</SidebarButton>
+        <SidebarButton>Respond</SidebarButton>
+        <SidebarButton>Download</SidebarButton>
+        <SidebarButton>Delete Review</SidebarButton>
+      </Sidebar>
+    </Container>
+  );
+};

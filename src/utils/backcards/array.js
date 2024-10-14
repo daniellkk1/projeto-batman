@@ -59,3 +59,27 @@ export const Photografys = [
         image: "https://s2.glbimg.com/9u12OWz7wLHfObFTtZlXOGsNuM4=/smart/e.glbimg.com/og/ed/f/original/2022/01/25/screenshot_2022-01-25_at_09-00-35_the_batman_2022.png"
     },
 ]
+
+export const reviews = [
+    {
+      user: "Nina Holloway",
+      avatar: "https://cdn.icon-icons.com/icons2/3708/PNG/512/girl_female_woman_person_people_avatar_icon_230018.png",
+      date: "29 Aug 2017",
+      comment: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+      rating: 5,
+    },
+    {
+      user: "Steve Fletcher",
+      avatar: "https://cdn-icons-png.flaticon.com/512/6858/6858504.png",
+      date: "30 Aug 2017",
+      comment: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+      rating: 4,
+    },
+    {
+      user: "Oscar Rogers",
+      avatar: "https://icons.veryicon.com/png/o/miscellaneous/user-avatar/user-avatar-male-5.png",
+      date: "31 Aug 2017",
+      comment: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+      rating: 3,
+    },
+  ];
