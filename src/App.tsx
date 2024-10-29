@@ -26,7 +26,7 @@ function App() {
           <li><Link style={{textDecoration: 'none',color: 'white'}} to="/">Home</Link></li>
           <li><Link style={{textDecoration: 'none',color: 'white'}} to="/Photos">Fotos</Link></li>
           <li><Link style={{textDecoration: 'none',color: 'white'}} to="/Coments">Comentarios</Link></li>
-          <li>Contato</li>
+          <li><Link style={{textDecoration: 'none',color: 'white'}} to="/Contact">Contato</Link></li>
         </ul>
       </ContainerHeader>
 
@@ -39,20 +39,24 @@ function App() {
                 <FooterText>&copy; 2024 Desenvolvido por Daniel Lima. Todos os direitos reservados.</FooterText>
                 <FooterLinks>
                 <FooterLinkItem>
-                  <Link to="/" >
+                  <Link to="/" style={{textDecoration: 'none',color: 'white'}}>
                     <FooterLink href="#about">Home</FooterLink>
                   </Link>
                 </FooterLinkItem>
                 <FooterLinkItem>
-                  <Link to="/Photos" >
+                  <Link to="/Photos" style={{textDecoration: 'none',color: 'white'}}>
                     <FooterLink href="#services">Fotos</FooterLink>
                   </Link>
                 </FooterLinkItem>
                 <FooterLinkItem>
+                  <Link to='/Coments' style={{textDecoration: 'none',color: 'white'}}>
                     <FooterLink href="#contact">Comentarios</FooterLink>
+                  </Link>
                 </FooterLinkItem>
                 <FooterLinkItem>
+                  <Link to='/Contact' style={{textDecoration: 'none',color: 'white'}}>
                     <FooterLink href="#contact">Contato</FooterLink>
+                  </Link>
                 </FooterLinkItem>
                 </FooterLinks>
             </FooterContent>

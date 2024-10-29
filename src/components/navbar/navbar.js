@@ -20,7 +20,9 @@ export const Navbar = () => {
             <Link style={{color: 'white', textDecoration: 'none'}} to='/Coments'>Comentarios</Link>
         </MenuItem>
 
-        <MenuItem onClick={toggleMenu} href="#">Contato</MenuItem>
+        <MenuItem onClick={toggleMenu} href="#">
+            <Link style={{color: 'white', textDecoration: 'none'}} to='/Contact'>Contato</Link>
+        </MenuItem>
       </Menu>
   );
 };

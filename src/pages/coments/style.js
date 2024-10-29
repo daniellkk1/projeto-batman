@@ -15,7 +15,7 @@ export const Container = styled.div`
 `;
 
 export const ReviewContainer = styled.div`
-  width: 70%;
+  width: 90%;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -25,8 +25,7 @@ export const ReviewContainer = styled.div`
 export const Sidebar = styled.div`
   width: 25%;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-evenly;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -41,15 +40,17 @@ export const Sidebar = styled.div`
 `;
 
 export const SidebarButton = styled.button`
-  background-color: #ffaa00;
+  background-color: red;
+  width: 50%;
   color: white;
-  padding: 10px;
+  padding: 6px;
   border-radius: 5px;
   margin-bottom: 10px;
   cursor: pointer;
+  transition: transform 3s ease;
   
   &:hover {
-    background-color: #ff8800;
+    transform: scale(1.01)
   }
 
   @media (max-width: 768px) {

@@ -8,22 +8,24 @@ export const ReviewList = () => {
     <Container>
       <ReviewContainer>
         {reviews.map((review, index) => (
-          <ReviewCard
-            key={index}
-            user={review.user}
-            avatar={review.avatar}
-            date={review.date}
-            comment={review.comment}
-            rating={review.rating}
-          />
+          <>
+            <ReviewCard
+              key={index}
+              user={review.user}
+              avatar={review.avatar}
+              date={review.date}
+              comment={review.comment}
+              rating={review.rating}
+            />
+            <Sidebar>
+              <SidebarButton>Compatilhar</SidebarButton>
+              <SidebarButton>Responder</SidebarButton>
+              <SidebarButton>Baixar</SidebarButton>
+              <SidebarButton>Deletar</SidebarButton>
+            </Sidebar>
+          </>
         ))}
       </ReviewContainer>
-      <Sidebar>
-        <SidebarButton>Share Review</SidebarButton>
-        <SidebarButton>Respond</SidebarButton>
-        <SidebarButton>Download</SidebarButton>
-        <SidebarButton>Delete Review</SidebarButton>
-      </Sidebar>
     </Container>
   );
 };
